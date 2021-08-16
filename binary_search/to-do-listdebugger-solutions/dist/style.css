@@ -1,0 +1,12 @@
+body{
+	background: #f9f9fa;
+}
+.add-list-block{
+	border: 1px solid #cccccc;
+}
+.creator {
+    position: absolute;
+    top: 20%;
+    right: -140px;
+    transform: translate(-50%,-50%);
+}

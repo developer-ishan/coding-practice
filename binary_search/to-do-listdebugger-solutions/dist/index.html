@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - To Do List - Debugger Solutions</title>
+  <head>
+    <title>Debugger Solutions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To do list is a list of tasks you need to complete, or things that you want to do. It is essential if you're going to beat work overload. So you can track your daily task">
+    <meta name="keywords" content="To Do List, Keep Note, Jquery to do list">
+    <meta name="author" content="Debugger Solutions">
+    <meta property="og:url" content="https://debuggersolutions.com/">
+    <meta property="og:title" content="Debugger Solutions : DS">
+</head>
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--  ********  -->
+<!-- This To Do List gives additional functions to delete lists using keywords.
+ Enter
+ 1. "first delete" - delete the first item 
+ 2. "last delete" - delete the last item 
+ 3. "all delete" - delete the entire list -->
+<!--  ********  -->
+<body>
+    <section class="my-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 add-list-block py-3">
+                    <h1 class="text-info">Add Task</h1>
+                    <div class="form-group">
+                        <label for="task-content"></label>
+                        <textarea class="form-control" id="task-content" rows="4" placeholder="Add your task"></textarea>
+                    </div>
+                    <button type="button" onclick="save_task()" class="btn btn-info w-25 add-task">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row saved-tasks">
+            </div>
+        </div>
+    </section>
+
+    <section class="creator">
+        <div class=" navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <a href="https://debuggersolutions.com">
+                    <p class="navbar-text text-info">Created By <strong>Debugger Solutions</strong></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
