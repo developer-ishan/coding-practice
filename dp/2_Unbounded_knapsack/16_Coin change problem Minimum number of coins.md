@@ -28,3 +28,60 @@ for i = 1 to n
         else
             dp[i][j] = dp[i-1][j]
 ```
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+ // } Driver Code Ends
+class Solution{
+
+	public:
+	int *coins;
+	long long int dp[1001][1001];
+	long long int ways(long long int val, long long int n){
+        if(val==0)
+            return 0;
+        if(n<=0 || val<0)
+            return INT_MAX;
+        if(dp[val][n]!=-1)
+            return dp[val][n];
+        return dp[val][n] = min(1+ways(val-coins[n-1], n), ways(val, n-1));
+    }
+    
+	int minCoins(int ip_coins[], int M, int V) 
+	{
+	    memset(dp, -1, sizeof(dp));
+	    coins = ip_coins;
+	    long long int x = ways(V, M);
+	    if(x>=INT_MAX)
+	        return -1;
+	   return x;
+	} 
+	  
+};
+
+// { Driver Code Starts.
+int main() 
+{
+   
+   
+   	int t;
+    cin >> t;
+    while (t--)
+    {
+        int v, m;
+        cin >> v >> m;
+
+        int coins[m];
+        for(int i = 0; i < m; i++)
+        	cin >> coins[i];
+
+      
+	    Solution ob;
+	    cout << ob.minCoins(coins, m, v) << "\n";
+	     
+    }
+    return 0;
+}
+  // } Driver Code Ends
+```
