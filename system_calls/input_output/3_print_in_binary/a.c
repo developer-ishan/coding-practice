@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-  int a = 13;
+  int a = 10;
 
   // printf("Decimal: %d\n", a);
   // printf("Hexadecimal: %08x\n", a); //32 bit int can have atmost 8 hexadecimal digits 
